@@ -1,0 +1,53 @@
+{
+  "template_only": true,
+  "schema_version": "1.0",
+  "usage": "segments 按真实剪辑填写，使用 track_id 标记轨道；这是可选自定义JSON记录，不保证可被剪辑软件直接导入，也不是CMX EDL。",
+  "episode_id": null,
+  "edit_version": null,
+  "completeness": null,
+  "authorization_evidence": null,
+  "timeline": {
+    "time_unit": "seconds",
+    "interval_convention": "[in,out)",
+    "fps_numerator": null,
+    "fps_denominator": null
+  },
+  "segments": [],
+  "segment_entry_template": {
+    "track_id": null,
+    "media_type": null,
+    "source_path": null,
+    "source_sha256": null,
+    "source_stream": null,
+    "source_in": null,
+    "source_out": null,
+    "timeline_in": null,
+    "timeline_out": null,
+    "speed": null,
+    "video_transforms": [],
+    "audio_gain_db": null,
+    "audio_source_path": null,
+    "reason": null
+  },
+  "export": {
+    "path": null,
+    "sha256": null,
+    "technical_checks": []
+  },
+  "editor_sync": {
+    "requested": null,
+    "project_path": null,
+    "backup_path": null,
+    "verified_items": [],
+    "unknown_items": []
+  },
+  "gaps": [],
+  "adoption_evidence": null,
+  "next_action": null,
+  "field_notes": {
+    "source_stream": "写明具体视频/音频流；声音桥接单独记录源与成片区间",
+    "audio_gain_db": "未实测或未确认用 null，不用0冒充默认处理；原声不得无授权替换",
+    "gaps": "类别、原文位置、插入点、时长是否已知、影响和恢复条件",
+    "completeness": "未确认/完整/阶段版/未完成，必须有实际覆盖依据"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "template_only": true,
+  "schema_version": "1.0",
+  "usage": "tasks 只收录实际项目记录；task_entry_template 仅供复制字段。已有回执优先恢复，不因换窗口新建受理次数。",
+  "project_id": null,
+  "updated_at": null,
+  "authorization": {
+    "source": null,
+    "scope": null,
+    "provider": null,
+    "model": null,
+    "max_accepted_tasks": null,
+    "retry_limit": null,
+    "budget_amount": null,
+    "currency": null,
+    "time_window": null,
+    "stop_conditions": []
+  },
+  "tasks": [],
+  "task_entry_template": {
+    "unit_id": null,
+    "prompt_draft_version": null,
+    "candidate_generation": null,
+    "accepted_generation": null,
+    "task_id": null,
+    "acceptance_status": null,
+    "execution_status": null,
+    "last_evidence_at": null,
+    "intent_path": null,
+    "payload_path": null,
+    "prompt_actual_path": null,
+    "reference_map_path": null,
+    "submit_response_path": null,
+    "query_record_paths": [],
+    "download_record_path": null,
+    "local_outputs": [],
+    "technical_status": null,
+    "adoption_status": null,
+    "edit_versions": [],
+    "dependencies": [],
+    "blocked_reason": null,
+    "cost": {
+      "estimate": null,
+      "actual_charge": null,
+      "refund": null,
+      "currency": null,
+      "evidence": null
+    },
+    "next_action": null
+  },
+  "field_notes": {
+    "acceptance_status": "未提交/明确未受理/已受理/受理不明；按证据填写",
+    "accepted_generation": "唯一已受理taskId才计数；失败仍保留；查询与重复下载不加次数",
+    "execution_status": "服务最后已知状态，并保留证据时间；超时不等于明确失败",
+    "adoption_status": "待查看/暂留/采用/拒绝/要求返修，不能由生成成功自动推导",
+    "cost": "无账单的未知费用保持 null，不填0"
+  }
+}

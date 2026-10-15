@@ -1,0 +1,21 @@
+{
+  "template_only": true,
+  "schema_version": "1.0",
+  "usage": "这是准备实际请求的字段工作表，不是任何渠道可直接发送的请求体。按当前接口构造 provider_request_body，真实冻结时只把最终业务请求体保存为 submit_payload.json；本模板不复制到回执目录充当证据。",
+  "provider": null,
+  "model": null,
+  "unit_id": null,
+  "duration_seconds": null,
+  "resolution": null,
+  "aspect_ratio": null,
+  "mode": null,
+  "prompt_source_path": null,
+  "prompt_sha256": null,
+  "reference_map_path": null,
+  "provider_request_body": null,
+  "field_notes": {
+    "provider_request_body": "当前工具实际发送的业务字段，必须符合实际文档，保留引用顺序；不包含认证密钥或Cookie",
+    "prompt_source_path": "冻结后应和 prompt_actual.txt 及归档同名TXT对应",
+    "warning": "填完工作表、修改template_only或发现文件存在，都不证明已获授权、已提交或已受理"
+  }
+}

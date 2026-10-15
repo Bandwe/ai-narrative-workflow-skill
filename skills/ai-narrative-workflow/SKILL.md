@@ -2,7 +2,7 @@
 name: ai-narrative-workflow
 description: Coordinate file-based AI narrative video and drama production from a locked script through reference assets, shot continuity, generation recovery, editing, retakes, and handoff. Use for multi-shot or episodic projects and resuming them in a new chat; follow the requested stage. This is a provider-neutral workflow, not a video API client or a screenplay-writing method.
 metadata:
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # AI 叙事制作流程
@@ -28,6 +28,8 @@ metadata:
 | 局部返修、本地剪辑、编辑器同步或交付 | [剪辑、返修与交付](references/editing-delivery.md) | [返修记录](assets/templates/retake.md)、[剪辑交付](assets/templates/edit-delivery.md) |
 
 跨阶段任务读取相关资料即可；执行到下一阶段再补读。不把全部参考文件加载作为交付前置条件。
+
+需要知道具体文件名、字段或建立项目记录时，读[文件总表与填写规则](references/file-catalog.md)。内含17份模板的对应关系；真实请求与回执由实际执行产生，不把空模板放到回执位置。
 
 ## 制作中保持的关键关系
 

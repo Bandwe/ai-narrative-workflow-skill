@@ -1,0 +1,33 @@
+{
+  "template_only": true,
+  "schema_version": "1.0",
+  "usage": "准备阶段标planned，实际上传并核对后标actual；两种记录区分保存。references中保留实际顺序，不按角色名称重新排序。",
+  "unit_id": null,
+  "binding_stage": null,
+  "request_payload_path": null,
+  "references": [],
+  "reference_entry_template": {
+    "slot": null,
+    "order_index": null,
+    "index_base": null,
+    "media_type": null,
+    "input_mode": null,
+    "roles": [],
+    "asset_id": null,
+    "actual_local_path": null,
+    "actual_sha256": null,
+    "derived_from_path": null,
+    "derived_from_sha256": null,
+    "transformation": null,
+    "upload_evidence_path": null,
+    "provider_file_identifier": null,
+    "payload_field": null,
+    "verified_at": null
+  },
+  "field_notes": {
+    "input_mode": "普通参考/首帧/尾帧/声音等，按实际请求填写",
+    "actual_local_path": "实际上传的裁切、缩放或拼图副本；不只填原图",
+    "order_index": "说明从0还是1开始，以实际调用字段为准",
+    "upload_evidence_path": "真实上传回执；长期交付用本地文件及哈希，不依赖临时签名链接"
+  }
+}

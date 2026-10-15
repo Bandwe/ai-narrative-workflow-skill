@@ -4,6 +4,8 @@
 
 适用于已有剧本的分镜制作、连续镜头生成、任务恢复、局部返修、剪辑和交接。也可以只执行其中一个阶段。
 
+完整方法见[通用制作手册 V03](docs/handbook.md)，具体文件和模板见[文件总表](skills/ai-narrative-workflow/references/file-catalog.md)。Release同时提供Skill安装包与独立的手册模板包。
+
 ## 它解决什么
 
 - 剧本与逐字对白先锁定，再安排镜头、表演与时长。
@@ -26,8 +28,10 @@ skills/ai-narrative-workflow/
     storyboard-continuity.md     剧本、资产、表演、镜头与连续性
     generation-recovery.md       提交、查询、下载、重试和批量恢复
     editing-delivery.md          原声、局部返修、剪辑、同步与缺口交付
-  assets/templates/              7份按需填写的文本模板
+    file-catalog.md              完整文件清单、生成者、时机和真实证据规则
+  assets/templates/              17份按需填写的Markdown/TXT/JSON模板
 evals/                            可复现的离线行为案例与验证说明
+docs/handbook.md                  完整通用手册V03，内含文件总表
 ```
 
 ## 安装
@@ -61,7 +65,9 @@ evals/                            可复现的离线行为案例与验证说明
 
 ## 验证与发布
 
-版本：**1.0.0**。
+版本：**1.1.0**。
+
+本版补齐[文件总表](skills/ai-narrative-workflow/references/file-catalog.md)，新增制作锁、连续性、交付说明和7种结构化JSON模板。请求准备工作表不直接发送给API；原始回执和实际提交TXT仍须从真实执行取得。
 
 结构检查和离线行为案例见 [evals/README.md](evals/README.md)。离线案例不调用付费服务，也不宣称验证了任何特定视频模型的效果或API可用性。
 

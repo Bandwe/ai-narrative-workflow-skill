@@ -1,0 +1,30 @@
+{
+  "template_only": true,
+  "schema_version": "1.0",
+  "usage": "只把 asset_entry_template 中的字段复制成真实 assets 条目；未知值保留 null。空数组不是资产已齐全的结论。",
+  "project_id": null,
+  "updated_at": null,
+  "assets": [],
+  "asset_entry_template": {
+    "asset_id": null,
+    "kind": null,
+    "character_or_scene": null,
+    "roles": [],
+    "relative_path": null,
+    "sha256": null,
+    "state_variant": null,
+    "source": null,
+    "adoption_status": null,
+    "adoption_evidence": null,
+    "derived_from": null,
+    "actual_image_generation_prompt_path": null,
+    "allowed_input_modes": [],
+    "missing_or_unconfirmed": []
+  },
+  "field_notes": {
+    "kind": "人物/服装/场景/道具/色彩/声音/站位等",
+    "roles": "此文件负责身份、服装、场景、状态或音色的哪一部分",
+    "actual_image_generation_prompt_path": "用户自行提供图片但没有真实生图记录时保持 null，不用建议稿代替",
+    "allowed_input_modes": "按当前要求与工具能力确定，未知保持空并注明未确认"
+  }
+}

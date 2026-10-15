@@ -1,0 +1,26 @@
+{
+  "template_only": true,
+  "schema_version": "1.0",
+  "usage": "成功下载和真实检查后填写；下载中断不创建新生成任务。outputs里只写实际取得的文件。",
+  "task_id": null,
+  "result_evidence_path": null,
+  "outputs": [],
+  "output_entry_template": {
+    "result_index": null,
+    "kind": null,
+    "local_path": null,
+    "bytes": null,
+    "sha256": null,
+    "downloaded_at": null,
+    "same_basename_prompt_path": null,
+    "prompt_sha256": null,
+    "technical_checks": [],
+    "reported_to_user_at": null
+  },
+  "field_notes": {
+    "kind": "原始视频/尾帧/预览/辅助输出；不要混淆",
+    "technical_checks": "仅记录实际做过的检查：工具、时间、检查项、结果和日志位置",
+    "same_basename_prompt_path": "从对应真实冻结请求恢复；找不到则保留 null 并标缺失",
+    "sha256": "实际本地文件的内容哈希，不填示例值"
+  }
+}

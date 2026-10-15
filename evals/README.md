@@ -27,4 +27,4 @@ python evals/create_fixtures.py --output /path/to/new-eval-workspace
 - 对剪辑成果核视频/音轨、2秒源区间与版本；可通过解码后的流哈希核对是否保留完整新片内容。
 - 将输出状态与原始证据比较。案例完成不等于任何真实服务、模型效果或软件工程兼容性验证。
 
-本版本的验证结果记录在 [results-v1.0.0.md](results-v1.0.0.md)。
+初版离线行为结果记录在 [results-v1.0.0.md](results-v1.0.0.md)。v1.1.0新增文件清单与模板的检查见 [results-v1.1.0.md](results-v1.1.0.md)；没有把文档扩充说成一次新的真实视频生成验证。

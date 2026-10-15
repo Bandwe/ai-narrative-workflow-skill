@@ -1,0 +1,26 @@
+{
+  "template_only": true,
+  "schema_version": "1.0",
+  "usage": "只在实际准备提交时另建真实意图记录。新窗口看到真实意图但没有明确回执时先核实，不重发。",
+  "unit_id": null,
+  "candidate_generation": null,
+  "submission_owner": null,
+  "authorization_evidence": null,
+  "request_payload_path": null,
+  "request_sha256": null,
+  "prompt_sha256": null,
+  "reference_map_path": null,
+  "intent_created_at": null,
+  "request_started_at": null,
+  "client_finished_at": null,
+  "acceptance_status": null,
+  "task_id": null,
+  "submit_response_path": null,
+  "transport_error": null,
+  "recovery_action": null,
+  "field_notes": {
+    "candidate_generation": "提交前锁候选编号；受理不明时不释放以便恢复原尝试",
+    "acceptance_status": "实际写未发出/明确未受理/已受理/受理不明，不能凭客户端超时写失败",
+    "request_sha256": "冻结的业务请求文件内容哈希，不包含认证材料"
+  }
+}
